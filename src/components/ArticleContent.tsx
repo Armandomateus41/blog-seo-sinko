@@ -1,12 +1,10 @@
-"use client"; 
-// Se não precisar de interatividade, pode remover
+"use client";
 
 import Image from "next/image";
 
 export default function ArticleContent() {
   return (
     <article className="flex-1">
-      {/* Categorias no topo (opcional) */}
       <div className="flex items-center gap-3 mb-2">
         <span className="text-sm bg-blue-500 text-white px-3 py-1 rounded-full font-semibold">
           Benefícios
@@ -16,12 +14,10 @@ export default function ArticleContent() {
         </span>
       </div>
 
-      {/* Título do Artigo */}
       <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
         8 Principais indicadores de vendas para maximizar resultados
       </h1>
 
-      {/* Metadados: data, tempo de leitura, autor */}
       <div className="text-sm text-gray-500 mb-6">
         <span>Publicado em 20/01/2025</span>
         <span className="mx-2">—</span>
@@ -42,8 +38,9 @@ export default function ArticleContent() {
 
       {/* Descrição breve / Introdução */}
       <p className="text-gray-700 mb-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s...
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry’s standard dummy text ever
+        since the 1500s...
       </p>
 
       {/* Subtítulo 1 */}
@@ -51,9 +48,9 @@ export default function ArticleContent() {
         Confira o novo valor do teto do INSS
       </h2>
       <p className="text-gray-700 mb-4">
-        Aqui você pode inserir um texto explicando o novo valor do teto do INSS. Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-        cubilia curae.
+        Aqui você pode inserir um texto explicando o novo valor do teto do INSS.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante
+        ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       </p>
 
       {/* Subtítulo 2 */}
@@ -61,9 +58,10 @@ export default function ArticleContent() {
         Entenda quais taxas são cobradas
       </h2>
       <p className="text-gray-700 mb-4">
-        Antes de contratar qualquer serviço financeiro, é fundamental entender as taxas envolvidas. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, arcu vitae elementum 
-        luctus, ex urna consectetur enim, quis pellentesque quam lorem vel est.
+        Antes de contratar qualquer serviço financeiro, é fundamental entender
+        as taxas envolvidas. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Nam vehicula, arcu vitae elementum luctus, ex urna consectetur
+        enim, quis pellentesque quam lorem vel est.
       </p>
 
       {/* Exemplo de Tabela */}
@@ -74,20 +72,32 @@ export default function ArticleContent() {
         <table className="min-w-full border border-gray-300 text-sm">
           <thead className="bg-gray-100">
             <tr>
-              <th className="px-4 py-2 border border-gray-300 text-left">Indicador</th>
-              <th className="px-4 py-2 border border-gray-300 text-left">Descrição</th>
-              <th className="px-4 py-2 border border-gray-300 text-left">Exemplo</th>
+              <th className="px-4 py-2 border border-gray-300 text-left">
+                Indicador
+              </th>
+              <th className="px-4 py-2 border border-gray-300 text-left">
+                Descrição
+              </th>
+              <th className="px-4 py-2 border border-gray-300 text-left">
+                Exemplo
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="px-4 py-2 border border-gray-300">Ticket Médio</td>
-              <td className="px-4 py-2 border border-gray-300">Valor médio das vendas em um período.</td>
+              <td className="px-4 py-2 border border-gray-300">
+                Valor médio das vendas em um período.
+              </td>
               <td className="px-4 py-2 border border-gray-300">R$ 200,00</td>
             </tr>
             <tr>
-              <td className="px-4 py-2 border border-gray-300">Taxa de Conversão</td>
-              <td className="px-4 py-2 border border-gray-300">Percentual de visitantes que se tornam clientes.</td>
+              <td className="px-4 py-2 border border-gray-300">
+                Taxa de Conversão
+              </td>
+              <td className="px-4 py-2 border border-gray-300">
+                Percentual de visitantes que se tornam clientes.
+              </td>
               <td className="px-4 py-2 border border-gray-300">5%</td>
             </tr>
           </tbody>
@@ -96,8 +106,9 @@ export default function ArticleContent() {
 
       {/* Conclusão */}
       <p className="text-gray-700 mb-6">
-        Lorem ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
+        Lorem ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry’s standard dummy text ever
+        since the 1500s.
       </p>
 
       {/* Tags no final do artigo */}

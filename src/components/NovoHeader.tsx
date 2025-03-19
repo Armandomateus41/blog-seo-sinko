@@ -3,14 +3,9 @@ import { Search } from "lucide-react";
 
 export default function NovoHeader() {
   return (
-    // w-screen para ocupar toda a largura da tela
-    // bg-white para fundo branco, shadow para leve sombra
+    
     <header className="w-screen bg-white shadow">
-      {/*
-        Removemos o container duplicado aqui.
-        Basta usar max-w e mx-auto para centralizar
-        e px para espaçamento.
-      */}
+    
       <div className="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
         
         {/* Logo */}
@@ -18,7 +13,7 @@ export default function NovoHeader() {
           SINKO
         </span>
         
-        {/* Menu de Navegação */}
+  
         <nav>
           <ul className="flex items-center gap-6">
             <li>
@@ -39,7 +34,7 @@ export default function NovoHeader() {
           </ul>
         </nav>
         
-        {/* Botão de Busca */}
+      
         <button className="flex items-center gap-2 bg-teal-600 text-white py-2 px-4 rounded-full hover:bg-teal-700 transition">
           <Search size={18} />
           <span>Buscar</span>

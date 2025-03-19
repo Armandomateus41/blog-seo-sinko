@@ -15,15 +15,14 @@ export default async function Destaques() {
   ];
 
   return (
-    // Se quiser remover completamente o espaço em cima/baixo, use py-0 ou pt-0
+   
     <div className="container mx-auto px-6">
-      {/* Seção de Destaques */}
-      {/* Para ficar ainda mais colado ao cabeçalho, troque 'py-4' por 'py-2' ou 'py-0' */}
+  
       <div className="w-screen relative left-1/2 -translate-x-1/2 bg-gray-100 dark:bg-gray-800 py-0">
         <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {destaques.map((post, index) => (
             <div key={index} className="flex items-center gap-4">
-              {/* Imagem Menor e Alinhada à Esquerda */}
+             
               <div className="relative w-28 h-28 flex-shrink-0">
                 <Image
                   src={`/images/${post.image}`}
@@ -32,10 +31,10 @@ export default async function Destaques() {
                   className="object-cover rounded-md"
                 />
               </div>
-              {/* Texto ao lado da imagem */}
+             
               <div>
                 <span className="text-sm text-orange-500 font-semibold flex items-center gap-1">
-                  🔥 Em alta
+                  Em alta
                 </span>
                 <h3 className="text-lg font-semibold mt-1">{post.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function DestaqueAbaixoCabecalho() {
-  // Exemplo de dados dos 4 itens
+
   const items = [
     {
       image: "1.png",
@@ -43,7 +43,7 @@ export default function DestaqueAbaixoCabecalho() {
 
               {/* Texto “Em alta” */}
               <span className="text-sm text-orange-500 font-semibold flex items-center gap-1">
-                🔥 Em alta
+               Em alta
               </span>
 
               {/* Breve descrição */}

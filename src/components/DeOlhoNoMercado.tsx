@@ -29,7 +29,7 @@ export default function DeOlhoNoMercado() {
         <div>
           <div className="relative w-full h-[300px]">
             <Image
-              src="/images/1.png" // 🔹 Ajuste o nome da imagem
+              src="/images/1.png" 
               alt="Imagem 1"
               fill
               className="object-cover rounded-[10px]"

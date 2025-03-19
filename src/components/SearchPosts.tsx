@@ -1,4 +1,4 @@
-"use client"; // 🚀 Este componente roda no cliente
+"use client"; 
 
 import { useState } from "react";
 import Link from "next/link";
@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function SearchPosts({ posts }: { posts: any[] }) {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filtra os posts com base no termo de busca
+ 
   const filteredPosts = posts.filter(
     (post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -17,7 +17,7 @@ export default function SearchPosts({ posts }: { posts: any[] }) {
     <div className="container mx-auto px-6 py-10">
       <h1 className="text-3xl font-bold text-center mb-6">Últimos Posts</h1>
 
-      {/* Barra de Busca */}
+      
       <div className="mb-6">
         <input
           type="text"
@@ -28,7 +28,7 @@ export default function SearchPosts({ posts }: { posts: any[] }) {
         />
       </div>
 
-      {/* Links para Categorias */}
+    
       <div className="mb-6">
         <h2 className="text-2xl font-bold mb-4">Categorias</h2>
         <div className="flex gap-4">
@@ -44,7 +44,7 @@ export default function SearchPosts({ posts }: { posts: any[] }) {
         </div>
       </div>
 
-      {/* Lista de Posts */}
+  
       <div className="grid md:grid-cols-3 gap-6">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (

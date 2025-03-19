@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
-// Componente que renderiza 2 cards lado a lado para "Últimas notícias"
 export default function UltimasNoticiasDuplo() {
-  // Exemplo de dados para cada card
+
   const noticias = [
     {
       image: "1.png",
@@ -23,7 +21,6 @@ export default function UltimasNoticiasDuplo() {
     },
   ];
 
-  // Função para o botão de arrasta
   function handleArrasta() {
     alert("Aqui você pode implementar a lógica de avançar para outro conteúdo!");
   }
@@ -33,14 +30,14 @@ export default function UltimasNoticiasDuplo() {
       {/* Título da seção */}
       <h2 className="text-3xl font-bold mb-6">Últimas notícias</h2>
 
-      {/* Container para os 2 cards lado a lado */}
+
       <div className="flex gap-6">
         {noticias.map((noticia, index) => (
           <div
             key={index}
             className="relative w-1/2 h-[360px] rounded-[10px] overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1 bg-white dark:bg-gray-800"
           >
-            {/* Imagem de fundo */}
+        
             <div className="relative w-full h-full">
               <Image
                 src={`/images/${noticia.image}`}
@@ -50,12 +47,12 @@ export default function UltimasNoticiasDuplo() {
               />
             </div>
 
-            {/* Overlay verde com clip-path */}
+
             <div
               className="absolute inset-0 text-white p-6 flex flex-col justify-end"
               style={{
-                backgroundColor: "rgba(20, 184, 166, 0.8)", // cor teal com 80% de opacidade
-                clipPath: "inset(52% 46% 0 0)", // ajuste para efeito de corte
+                backgroundColor: "rgba(20, 184, 166, 0.8)", 
+                clipPath: "inset(52% 46% 0 0)", 
               }}
             >
               {/* Rótulo de categoria */}

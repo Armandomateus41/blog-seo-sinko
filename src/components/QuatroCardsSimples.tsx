@@ -31,21 +31,13 @@ export default function QuatroCardsSimples() {
 
   return (
     <section className="max-w-[1440px] mx-auto px-6 mt-12">
-      {/*
-        Grid com 1 coluna no mobile e 4 colunas em telas médias ou maiores.
-        "md:divide-x md:divide-gray-200" adiciona uma linha de separação vertical entre as colunas apenas em telas médias para cima.
-      */}
+    
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:divide-x md:divide-gray-200">
         {cards.map((card, index) => (
-          // "px-4" garante que o conteúdo não fique colado na linha de divisão
+         
           <div key={index} className="px-4">
             <div className="flex flex-col items-start">
-              {/*
-                Container da imagem: 
-                - "relative w-full h-40" define o tamanho da imagem.
-                - "mb-2" adiciona espaço abaixo.
-                - "border border-gray-200 rounded-[10px] overflow-hidden" aplica a borda apenas à imagem.
-              */}
+          
               <div className="relative w-full h-40 mb-2 border border-gray-200 rounded-[10px] overflow-hidden">
                 <Image
                   src={`/images/${card.image}`}
@@ -54,15 +46,15 @@ export default function QuatroCardsSimples() {
                   className="object-cover"
                 />
               </div>
-              {/* Categoria */}
+            
               <span className="text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-semibold">
                 {card.category}
               </span>
-              {/* Texto */}
+       
               <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">
                 {card.text}
               </p>
-              {/* Data */}
+             
               <p className="text-sm text-gray-500 mt-2">{card.date}</p>
             </div>
           </div>

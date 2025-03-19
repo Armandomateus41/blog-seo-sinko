@@ -1,9 +1,8 @@
 import Link from "next/link";
-// Exemplos de ícones do Lucide
+
 import { Newspaper, CreditCard, Banknote, Gift } from "lucide-react";
 
 export default function NaveguePorCategoria() {
-  // Exemplo de dados das categorias
   const categories = [
     {
       icon: <Newspaper size={24} />,
@@ -29,7 +28,7 @@ export default function NaveguePorCategoria() {
 
   return (
     <section className="mt-12 max-w-[1440px] mx-auto px-6">
-      {/* Título e link "Ver mais" */}
+   
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold">Navegue por categoria</h2>
         <Link href="#" className="text-sm text-[#00bcd4] font-bold">
@@ -37,14 +36,14 @@ export default function NaveguePorCategoria() {
         </Link>
       </div>
 
-      {/* Grid de categorias */}
+    
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {categories.map((cat, index) => (
           <div
             key={index}
             className="bg-white rounded-lg shadow-md p-4"
           >
-            {/* Linha superior: título à esquerda, ícone à direita */}
+          
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-base font-semibold text-gray-800">
                 {cat.title}
@@ -54,10 +53,10 @@ export default function NaveguePorCategoria() {
               </div>
             </div>
 
-            {/* Risco divisor */}
+
             <hr className="border-gray-200 mb-2" />
 
-            {/* Texto descritivo */}
+           
             <p className="text-sm text-gray-500">
               {cat.text}
             </p>

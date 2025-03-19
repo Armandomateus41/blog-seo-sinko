@@ -1,4 +1,4 @@
-"use client"; //  Precisamos do useState, então é um Client Component
+"use client"; 
 
 import { useEffect, useState } from "react";
 

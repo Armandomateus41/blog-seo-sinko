@@ -1,5 +1,5 @@
 "use client"; 
-// Se não houver interatividade, você pode remover esta linha para ser um Server Component
+
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,16 +7,16 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     <aside className="w-full lg:w-[300px] flex-shrink-0 space-y-6">
-      {/* Mais Lidas */}
+      
       <div className="bg-white rounded-lg  p-2">
         <h3 className="text-base font-semibold mb-4">Mais lidas</h3>
         <ul className="space-y-3 text-sm">
-          {/* Item 1 */}
+ 
           <li className="flex gap-2">
-            {/* Imagem arredondada de 10px, sem borda extra */}
+           
             <div className="relative w-16 h-15 rounded-[10px] overflow-hidden flex-shrink-0">
               <Image
-                src="/images/1.png" // Ajuste o caminho/arquivo
+                src="/images/1.png" 
                 alt="Post 1"
                 fill
                 className="object-cover"
@@ -112,9 +112,9 @@ export default function Sidebar() {
       {/* Gostou do conteúdo? Compartilhe! */}
       <div className="bg-white rounded-lg  p-4 text-sm text-gray-00">
         <p className="mb-3 font-medium">Gostou do conteúdo? Compartilhe!</p>
-        {/* Ícones de redes sociais (YouTube, Facebook, Twitter, Instagram, LinkedIn, WhatsApp) */}
+    
         <div className="flex gap-3">
-          {/* YouTube */}
+        
           <Link href="#" aria-label="YouTube">
             <Image
               src="/images/youtube.png"
@@ -124,7 +124,7 @@ export default function Sidebar() {
               className="hover:opacity-80 transition"
             />
           </Link>
-          {/* Facebook */}
+         
           <Link href="#" aria-label="Facebook">
             <Image
               src="/images/Insta.png"
@@ -134,7 +134,7 @@ export default function Sidebar() {
               className="hover:opacity-80 transition"
             />
           </Link>
-          {/* Twitter */}
+    
           <Link href="#" aria-label="Twitter">
             <Image
               src="/images/twitter.png"
