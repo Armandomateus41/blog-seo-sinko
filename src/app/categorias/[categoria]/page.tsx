@@ -2,13 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
-// ✅ Corrige a tipagem do `params` no Next.js 15
+
 export default async function CategoriaPage({ params }: { params: { categoria?: string } }) {
   if (!params || !params.categoria) {
     return notFound();
   }
 
-  // ✅ Carrega os posts e filtra pela categoria informada
+
   const posts = await getAllPosts();
   const postsFiltrados = posts.filter((post) => post.categoria === params.categoria);
 
@@ -34,8 +34,8 @@ export default async function CategoriaPage({ params }: { params: { categoria?: 
   );
 }
 
-// ✅ Garante que o Next.js gere as páginas estáticas corretamente
+
 export async function generateStaticParams() {
-  const categorias = ["seo", "frontend", "nextjs"]; // 🔹 Lista de categorias disponíveis
+  const categorias = ["seo", "frontend", "nextjs"]; 
   return categorias.map((categoria) => ({ categoria }));
 }

@@ -4,10 +4,9 @@ import { sendEmail } from "@/lib/mail";
 
 const prisma = new PrismaClient();
 
-// Mapa para armazenar IPs e limitar requisições
+
 const rateLimitMap = new Map();
 
-// Função para verificar Rate Limiting (máx. 3 comentários por minuto)
 function isRateLimited(ip: string) {
   const now = Date.now();
   const timeWindow = 60 * 1000; // 1 minuto
@@ -20,7 +19,7 @@ function isRateLimited(ip: string) {
   return recentRequests.length > 3;
 }
 
-// ✅ Rota POST: Adiciona um comentário com proteção contra spam
+
 export async function POST(req: Request) {
   const { postSlug, name, content } = await req.json();
   const ip = req.headers.get("x-forwarded-for") || "unknown";
@@ -41,7 +40,7 @@ export async function POST(req: Request) {
     data: { postSlug, name, content },
   });
 
-  // ✅ Enviar e-mail para o dono do blog
+  
   await sendEmail(
     "Novo Comentário no Blog!",
     `Novo comentário no post: ${postSlug}\n\nNome: ${name}\nComentário: ${content}`

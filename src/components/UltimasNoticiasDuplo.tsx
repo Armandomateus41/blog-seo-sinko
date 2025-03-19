@@ -65,7 +65,7 @@ export default function UltimasNoticiasDuplo() {
               <p className="text-sm mt-2">
                 por {noticia.author} | {noticia.date}
               </p>
-              {/* Botão de arrasta (aparece apenas no segundo card) */}
+          
               {index === 1 && (
                 <button
                   onClick={handleArrasta}

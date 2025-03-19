@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/posts";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const baseUrl = "http://localhost:3000"; // Troque para seu domínio em produção
+  const baseUrl = "http://localhost:3000"; 
   const posts = await getAllPosts();
 
   const rssItems = posts
