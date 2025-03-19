@@ -44,7 +44,8 @@ export default function Footer() {
                 <Link href="#">Notícias</Link>
               </li>
               <li>
-                <Link href="#">Nossos produtos</Link>
+                <Link href="">Nossos produtos</Link>
+                
               </li>
             </ul>
           </div>

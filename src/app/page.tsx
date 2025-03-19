@@ -12,9 +12,10 @@ import Destaques from "@/components/Destaques";
 async function HomePage() {
   // Se necessário, você pode obter dados e passá-los para os componentes.
   return (
-    <div>
+    <div  className="overflow-x-hidden">
       {/* Seções Importadas */}
       <NovoHeader />
+      <main className="max-w-[1440px] mx-auto px-6 py-10">
       <Destaques />
       <MaisLidasPrincipal />
       <QuatroCardsSimples />
@@ -22,6 +23,7 @@ async function HomePage() {
       <AssuntosMaisAcessados />
       <DeOlhoNoMercado />
       <NaveguePorCategoria />
+      </main>
       <Footer />
     </div>
   );
